@@ -35,7 +35,7 @@
 | --- | --- | --- |
 | **GET** |  **/users/:id** | recuperar usuário (id válido pra teste: IxF425tsgV8DTPPLHdUF) |
 | **POST** | **/users** | gravar usuário |
-| **PATCH** | **/users/id** | atualizar usuário (passar um objeto válido, pode também usar o id IxF425tsgV8DTPPLHdUF) |
+| **PATCH** | **/users/:id** | atualizar usuário (passar um objeto válido, pode também usar o id IxF425tsgV8DTPPLHdUF) |
 
 exemplo de objeto pra passar uma atualização:
 ```javascript
@@ -58,6 +58,7 @@ exemplo de objeto para inserir um produto:
     "nome": "Avaliação"
 }
 ```
+
 **Tratamento 404** - recurso não encontrado
 
 **Tratamento 500** - Varia dependendo do que foi executado
