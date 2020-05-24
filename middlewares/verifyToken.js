@@ -23,7 +23,7 @@ const verifyToken = (req, res, next) => {
                     descError.erro = "Token inválido";
                     break;
                 default:
-                    descError.erro  = "Erro genérico";
+                    descError.erro  = "Erro genérico de token, gere um novo token e tente novamente";
             }
             return res  
                     .status(500)

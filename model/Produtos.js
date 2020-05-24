@@ -5,7 +5,7 @@ class Produtos extends BaseModel {
         super();
     }
 
-    get(id) {
+    get(id) {        
         return this.db
             .collection('produtos')
             .doc(id)
