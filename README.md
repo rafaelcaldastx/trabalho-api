@@ -12,12 +12,13 @@
 - [x]  Deverá estar disponível no Heroku, igual fizemos em sala de aula;
 - [x]  Além dos arquivos que realizamos testes unitários na sala de aula, o arquivo de verifyToken deverá possuir testes.
 
-Funções disponiveis:
-
 [link do heroku](https://trabalho-api.herokuapp.com/): https://trabalho-api.herokuapp.com/
-(Leandro, não esquece de acessar o link do heroku e esperar retornar a mensagem da api, os apps gratuitos do heroku entram em modo sleep automaticamente após 30 minutos de inatividade precisando ser chamados pra acordarem)
-    
-post auth - autenticação pra receber o token (use o objeto a baixo)
+
+**(Leandro, não esquece de acessar o link do heroku e esperar retornar a mensagem da api, os apps gratuitos do heroku entram em modo sleep automaticamente após 30 minutos de inatividade precisando ser chamados pra acordarem)**
+
+## Funções disponiveis:
+#### Auth
+**post auth** - autenticação pra receber o token (use o objeto a baixo)
 
 ```javascript
 {
@@ -25,9 +26,10 @@ post auth - autenticação pra receber o token (use o objeto a baixo)
     "password": "123456"
 }
 ```
-get   users/id recuperar usuário (id válido pra teste: IxF425tsgV8DTPPLHdUF)
-post  users    gravar usuário
-patch users/id atualizar usuário (passar um objeto válido, pode também usar o id IxF425tsgV8DTPPLHdUF)
+#### Users
+**get   users/id** recuperar usuário (id válido pra teste: IxF425tsgV8DTPPLHdUF)
+**post  users**    gravar usuário
+**patch users/id** atualizar usuário (passar um objeto válido, pode também usar o id IxF425tsgV8DTPPLHdUF)
 exemplo de objeto pra passar uma atualização:
 ```javascript
 {
@@ -36,8 +38,9 @@ exemplo de objeto pra passar uma atualização:
     "password": "123456"
 }
 ```
-get   produtos/id recuperar usuário (id válido pra teste: kTZiKc3LV9X9j3LN7HFE)
-post  produtos    gravar produto
+#### Produtos
+**get   produtos/id** recuperar usuário (id válido pra teste: kTZiKc3LV9X9j3LN7HFE)
+**post  produtos**    gravar produto
 exemplo de objeto para inserir um produto:
 ```javascript
 {
@@ -46,7 +49,7 @@ exemplo de objeto para inserir um produto:
     "nome": "Avaliação"
 }
 ```
-Tratamento 404 - recurso não encontrado
-Tratamento 500 - Varia dependendo do que foi executado
+**Tratamento 404** - recurso não encontrado
+**Tratamento 500** - Varia dependendo do que foi executado
     
 O teste realizado no verify token pensamos em realizar um post direto em alguma função usando um token valido, ou gerar um antes e posteriormente realizar uma requisição em outra função, mas pra isso estariamos envolvendo outras funções no teste e perderia um pouco a idéia de que cada teste é realizado em sua própria função, sendo assim geramos um token válido e manipulamos um retorno especifico dentro do verifyToken que só é respondido quando oriundo de um teste.
