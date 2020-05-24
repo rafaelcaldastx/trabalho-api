@@ -18,7 +18,11 @@
 
 ## Funções disponiveis:
 ### Auth:
-**post auth** - autenticação pra receber o token (use o objeto a baixo)
+| **Verbo**  |  **Rota**  | **Função** |
+| --- | --- | --- |
+|  **POST**  |  **/auth**  |  - autenticação pra receber o token | 
+
+ (use o objeto a baixo)
 
 ```javascript
 {
@@ -27,9 +31,12 @@
 }
 ```
 ### Users:
-**get   users/id** recuperar usuário (id válido pra teste: IxF425tsgV8DTPPLHdUF)
-**post  users**    gravar usuário
-**patch users/id** atualizar usuário (passar um objeto válido, pode também usar o id IxF425tsgV8DTPPLHdUF)
+| **Verbo**  |  **Rota**  | **Função** |
+| --- | --- | --- |
+| **GET** |  **/users/:id** | recuperar usuário (id válido pra teste: IxF425tsgV8DTPPLHdUF) |
+| **POST** | **/users** | gravar usuário |
+| **PATCH** | **/users/id** | atualizar usuário (passar um objeto válido, pode também usar o id IxF425tsgV8DTPPLHdUF) |
+
 exemplo de objeto pra passar uma atualização:
 ```javascript
 {
@@ -39,8 +46,10 @@ exemplo de objeto pra passar uma atualização:
 }
 ```
 ### Produtos:
-**get   produtos/id** recuperar usuário (id válido pra teste: kTZiKc3LV9X9j3LN7HFE)
-**post  produtos**    gravar produto
+| **Verbo**  |  **Rota**  | **Função** |
+| --- | --- | --- |
+| **GET** | **/produtos/:id** | recuperar usuário (id válido pra teste: kTZiKc3LV9X9j3LN7HFE)
+| **POST** | **/produtos** | gravar produto
 exemplo de objeto para inserir um produto:
 ```javascript
 {
