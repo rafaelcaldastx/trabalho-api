@@ -50,6 +50,7 @@ exemplo de objeto para inserir um produto:
 }
 ```
 **Tratamento 404** - recurso não encontrado
+
 **Tratamento 500** - Varia dependendo do que foi executado
     
 O teste realizado no verify token pensamos em realizar um post direto em alguma função usando um token valido, ou gerar um antes e posteriormente realizar uma requisição em outra função, mas pra isso estariamos envolvendo outras funções no teste e perderia um pouco a idéia de que cada teste é realizado em sua própria função, sendo assim geramos um token válido e manipulamos um retorno especifico dentro do verifyToken que só é respondido quando oriundo de um teste.
