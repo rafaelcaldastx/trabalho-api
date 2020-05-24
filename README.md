@@ -17,7 +17,7 @@
 **(Leandro, não esquece de acessar o link do heroku e esperar retornar a mensagem da api, os apps gratuitos do heroku entram em modo sleep automaticamente após 30 minutos de inatividade precisando ser chamados pra acordarem)**
 
 ## Funções disponiveis:
-#### Auth
+### Auth:
 **post auth** - autenticação pra receber o token (use o objeto a baixo)
 
 ```javascript
@@ -26,7 +26,7 @@
     "password": "123456"
 }
 ```
-#### Users
+### Users:
 **get   users/id** recuperar usuário (id válido pra teste: IxF425tsgV8DTPPLHdUF)
 **post  users**    gravar usuário
 **patch users/id** atualizar usuário (passar um objeto válido, pode também usar o id IxF425tsgV8DTPPLHdUF)
@@ -38,7 +38,7 @@ exemplo de objeto pra passar uma atualização:
     "password": "123456"
 }
 ```
-#### Produtos
+### Produtos:
 **get   produtos/id** recuperar usuário (id válido pra teste: kTZiKc3LV9X9j3LN7HFE)
 **post  produtos**    gravar produto
 exemplo de objeto para inserir um produto:
