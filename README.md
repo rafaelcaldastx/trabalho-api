@@ -14,7 +14,7 @@
 
 [link do heroku](https://trabalho-api.herokuapp.com/): https://trabalho-api.herokuapp.com/
 
-**(Leandro, não esquece de acessar o link do heroku e esperar retornar a mensagem da api, os apps gratuitos do heroku entram em modo sleep automaticamente após 30 minutos de inatividade precisando ser chamados pra acordarem)**
+**(@leandroffaria não esquece de acessar o link do heroku e esperar retornar a mensagem da api, os apps gratuitos do heroku entram em modo sleep automaticamente após 30 minutos de inatividade precisando ser chamados pra acordarem)**
 
 ## Funções disponiveis:
 ### Auth:
