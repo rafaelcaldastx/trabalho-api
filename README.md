@@ -50,6 +50,7 @@ exemplo de objeto pra passar uma atualização:
 | --- | --- | --- |
 | **GET** | **/produtos/:id** | recuperar usuário (id válido pra teste: kTZiKc3LV9X9j3LN7HFE)
 | **POST** | **/produtos** | gravar produto
+
 exemplo de objeto para inserir um produto:
 ```javascript
 {
